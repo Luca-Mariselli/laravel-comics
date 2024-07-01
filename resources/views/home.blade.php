@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    prova
+    <div>
+        @foreach ($arrayFilm as $film)
+            <li>{{$film['title']}}</li>
+        @endforeach
+    </div>
 </body>
 </html>
