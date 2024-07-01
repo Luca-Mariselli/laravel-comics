@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <div>
-        @foreach ($arrayFumetti as $fumetto)
-            <li>{{$fumetto['title']}}</li>
-        @endforeach
-
-        <button><a href="http://127.0.0.1:8000/about">About</a></button>
-    </div>
+    Questo e` l'about
 </body>
 </html>
