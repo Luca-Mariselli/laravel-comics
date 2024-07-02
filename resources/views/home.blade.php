@@ -1,3 +1,5 @@
+@extends('layouts.mylayout')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +13,7 @@
 
 <body>
     <h1 class="title">Comics:</h1>
-    <div class="container">
+    @section('content')
         @foreach ($arrayFumetti as $id => $fumetto)
             <div class="card">
                 <h3 class="mb-1">{{ $fumetto['title'] }}</h3>
@@ -19,8 +21,7 @@
                 <a href="/home/{{ $id }}"> > Read More < </a>
             </div>
         @endforeach
-    </div>
-    <button><a href="http://127.0.0.1:8000/about">About</a></button>
+    @endsection
 
 </body>
 
