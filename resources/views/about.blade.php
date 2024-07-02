@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    @include('partials.header')
     Questo e` l'about
 </body>
 

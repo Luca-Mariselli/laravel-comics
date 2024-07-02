@@ -17,18 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = config("data.store"); 
     return view('home', $data);
-});
+})-> name("home");
 
 
 Route::get('/home', function () {
     $data = config("data.store"); 
     return view('home', $data);
-});
+}); 
 
 Route::get('/about', function () {
     
     return view('about');
-});
+})-> name("about");
 
 Route::get('/home/{id}', function (string $id) {
     $allComics = config("data.store");

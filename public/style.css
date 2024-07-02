@@ -45,15 +45,17 @@ img{
     margin-bottom: 1rem;
 }
 
-a{
+.more{
     text-decoration: none;
     color: white;
     font-weight: 500;
-    background-color: #7191E6;
     border-radius: 20px;
     padding: 0.5rem;
 }
-
+.more:hover{
+    background-color: #7191E6;
+    transition: 0.5s;
+}
 .card-more{
     display: flex;
     flex-direction: column;
@@ -65,4 +67,32 @@ a{
     margin: 0 auto;
     text-align: center;
     margin-top: 3rem;
+}
+
+.h-container{
+    height: 100px;
+    width: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 3rem;
+    padding: 1rem;
+}
+.head-a:hover{
+    background-color: #646464;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: #646464;
+    
 }

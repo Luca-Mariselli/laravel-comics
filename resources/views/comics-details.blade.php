@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    @include('partials.header')
     <div class="container-more">
         <div class="card-more">
 

@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <h1 class="title">Comics:</h1>
+
     @section('content')
         @foreach ($arrayFumetti as $id => $fumetto)
             <div class="card">
                 <h3 class="mb-1">{{ $fumetto['title'] }}</h3>
                 <img src="{{ $fumetto['thumb'] }}" alt="">
-                <a href="/home/{{ $id }}"> > Read More < </a>
+                <a class="more" href="/home/{{ $id }}"> > Read More < </a>
             </div>
         @endforeach
     @endsection
