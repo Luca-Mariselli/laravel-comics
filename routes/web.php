@@ -15,17 +15,27 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $data = config("store"); 
+    $data = config("data.store"); 
     return view('home', $data);
 });
 
 
 Route::get('/home', function () {
-    
-    return view('home');
+    $data = config("data.store"); 
+    return view('home', $data);
 });
 
 Route::get('/about', function () {
     
     return view('about');
+});
+
+Route::get('/home/{id}', function (string $id) {
+    $allComics = config("data.store");
+    $comics = $allComics["arrayFumetti"];
+    $singleComic = $comics[$id];
+    $comicData = [
+        "comic" => $singleComic
+    ];
+    return view('comics-details', $comicData);
 });
