@@ -37,5 +37,11 @@ Route::get('/home/{id}', function (string $id) {
     $comicData = [
         "comic" => $singleComic
     ];
+    // if(array_key_exists(int {$id}, array $allComics) = true){
+    //     return view('comics-details', $comicData);
+    // } else{
+    //     return "Il fumetto non esiste";
+    // };
+    
     return view('comics-details', $comicData);
 });

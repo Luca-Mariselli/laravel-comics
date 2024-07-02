@@ -10,8 +10,14 @@
 </head>
 
 <body>
-    <div class="card">
-        <h1>{{ $comic['title'] }}</h1>
+    <div class="container-more">
+        <div class="card-more">
+
+            <img class="mb-1" src="{{ $comic['thumb'] }}" alt="">
+            <h1 class="mb-1">{{ $comic['title'] }}</h1>
+            <div class="mb-1">{{ $comic['description'] }}</div>
+            <h4>Price: {{ $comic['price'] }}</h4>
+        </div>
     </div>
 </body>
 

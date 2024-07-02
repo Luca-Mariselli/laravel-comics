@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <div>
-        @foreach ($arrayFumetti as $fumetto)
-            <li>{{ $fumetto['title'] }}</li>
+    <h1 class="title">Comics:</h1>
+    <div class="container">
+        @foreach ($arrayFumetti as $id => $fumetto)
+            <div class="card">
+                <h3 class="mb-1">{{ $fumetto['title'] }}</h3>
+                <img src="{{ $fumetto['thumb'] }}" alt="">
+                <a href="/home/{{ $id }}"> > Read More < </a>
+            </div>
         @endforeach
-
-        <button><a href="http://127.0.0.1:8000/about">About</a></button>
     </div>
+    <button><a href="http://127.0.0.1:8000/about">About</a></button>
+
 </body>
 
 </html>
